@@ -1,0 +1,49 @@
+.switch {
+    display: inline-grid;
+    display: -ms-grid;
+    grid-template-columns: 40px 10px auto;
+    -ms-grid-columns: 40px 10px auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.switchObj {
+    grid-column-start: 1;
+    -ms-grid-column: 1;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 8px;
+    background: rgb(21, 80, 134);
+    cursor: pointer;
+
+    &.on {
+        .switchInner {
+            right: 3px;
+            background: white;
+        }
+    }
+
+    &.off {
+        opacity: 0.25;
+
+        .switchInner {
+            left: 3px;
+            background: white;
+        }
+    }
+
+    .switchInner{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-radius: 8px;
+        top: 3px;
+    }
+}
+
+.switchTxt{
+    padding-top: 3px;
+    grid-column-start: 3;
+    -ms-grid-column: 3;
+    color: white;
+}

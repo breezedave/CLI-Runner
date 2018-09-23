@@ -1,0 +1,21 @@
+.SideBar {
+    background-color: rgb(6, 36, 64);
+    grid-row-start: 1;
+    -ms-grid-row: 1;
+    grid-column-start: 1;
+    -ms-grid-column: 1;
+    overflow: hidden;
+
+    display: inline-grid;
+    display: -ms-grid;
+    grid-template-columns: 30px auto 30px;
+    -ms-grid-columns: 30px auto 30px;
+    grid-template-rows: 50px 140px auto 80px 20px;
+    -ms-grid-rows: 50px 140px auto 80px 20px;
+
+    font-size: 12px;
+    font-family: verdana;
+    font-weight: 700;
+    color: rgb(133, 153, 173);
+    overflow-x: hidden;
+}

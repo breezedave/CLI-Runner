@@ -1,0 +1,117 @@
+{
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "root": true,
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": false,
+        "jquery": true
+    },
+    "globals": {
+        "__dirname": true,
+        "NorlandTech": true,
+        "Ext": true,
+        "currentSessionData": true,
+        "tddiCustom": true,
+        "d3": true,
+        "global": true,
+        "describe": true,
+        "beforeAll": true,
+        "beforeEach": true,
+        "it": true,
+        "expect": true,
+        "window": true
+    },
+	"plugins": [
+		"html"
+	],
+	"settings": {
+		"html/html-extensions":[
+			".html",
+			".aspx"
+		]
+	},
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+		"camelcase": "warn",
+        "indent": [
+            "error",
+            4,
+			{
+				"SwitchCase": 1
+			}
+        ],
+        "linebreak-style": "off",
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+		"no-console": "off",
+		"comma-style": [
+			"warn",
+			"last"
+		],
+		"comma-dangle": "error",
+		"brace-style": [
+			"error",
+			"1tbs"
+		],
+		"max-depth": [
+			"error",
+			3
+		],
+		"newline-after-var": [
+            "error",
+            "always"
+        ],
+		"newline-before-return": "error",
+		"newline-per-chained-call": [
+			"error",
+			{
+				"ignoreChainWithDepth": 2
+			}
+		],
+		"no-multiple-empty-lines": "error",
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "CallExpression[callee.name='setTimeout']",
+                "message": "Do not use setTimeout to get around Bugs."
+            }
+        ],
+		"object-curly-newline": [
+			"error",
+			{
+				"minProperties": 2,
+				"multiline": true,
+				"consistent": true
+			}
+		],
+		"object-property-newline": "warn",
+		"one-var-declaration-per-line": [
+			"error",
+			"initializations"
+		],
+		"no-nested-ternary": "error",
+		"max-params": [
+			"warn",
+			3
+		],
+		"space-infix-ops": "error",
+		"eqeqeq": "error",
+		"wrap-iife": [
+			"error",
+			"inside"
+		]
+	}
+}

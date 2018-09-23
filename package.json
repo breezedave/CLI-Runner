@@ -1,11 +1,15 @@
 {
-  "name": "electron-quick-start",
+  "name": "Runner",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A Runner for all dotnet and node in a project",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "package": "electron-packager . --overwrite",
+    "start": "electron .",
+    "debug": "electron --inspect=9229 .",
+    "gulp": "gulp"
   },
+  "productName": "Runner",
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
@@ -16,7 +20,52 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
+  "dependencies": {
+    "buffer": "^5.2.1",
+    "events": "^3.0.0",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "electron": "*",
+    "fs": "*"
+  },
   "devDependencies": {
-    "electron": "^2.0.0"
+    "fs": "*",
+    "child_process": "*",
+    "@babel/polyfill": "*",
+    "babel-core": "*",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "babel-preset-env": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "browser-sync": "*",
+    "css-loader": "*",
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.2",
+    "electron-winstaller": "*",
+    "eslint": "*",
+    "eslint-plugin-html": "*",
+    "eslint-plugin-react": "*",
+    "file-loader": "*",
+    "gulp": "*",
+    "gulp-print": "*",
+    "gulp-run": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "*",
+    "node-sass": "*",
+    "react-hot-loader": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "url-loader": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*",
+    "webpack": "*",
+    "webpack-dev-middleware": "*",
+    "webpack-hot-middleware": "*",
+    "webpack-module-hot-accept": "*",
+    "webpack-stream": "*"
   }
 }
